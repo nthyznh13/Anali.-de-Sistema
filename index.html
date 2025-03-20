@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <h3> cadastro </h3>
+    <input type = "text" placeholder = "login" id = "login">
+    <input type = "password" placeholder = "senha" id = "senha">
+    <input type = "submit" onclick = "logar ( ); returnfalse">
+  </form>
+      <script>
+        function logar ( ){
+        var login = document.getelementByID ("login"). value;
+        var senha = document.getelementByID ("senha"). value;
+        
+          if (login == "admin" && senha == "1234"){
+               alert ("sucesso");
+               locatin.href= "home.html";
+               }else{
+                     alert ("usuario ou senha incorretos");
+               }
+      </script>
+</body>
+</html>
